@@ -10,7 +10,8 @@ unit class GTK::Simple::Button does GTK::Simple::Widget;
 
 has $!clicked_supply;
 
-submethod BUILD(:$label!) {
+multi submethod BUILD(:$!gtk_widget){}
+multi submethod BUILD(:$label!) {
     $!gtk_widget = gtk_button_new_with_label($label);
 }
 

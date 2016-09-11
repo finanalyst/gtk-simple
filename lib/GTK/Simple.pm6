@@ -39,3 +39,4 @@ require GTK::Simple::RadioButton;
 require GTK::Simple::LevelBar;
 require GTK::Simple::LinkButton;
 require GTK::Simple::ScrolledWindow;
+require GTK::Simple::GladeApp;
